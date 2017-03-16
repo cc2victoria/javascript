@@ -629,7 +629,7 @@
   
   - 不要使用 `Array` 的 `index` 作为 `React`的 `key` 值。
 
-  > 为什么? [Why Array Index as Key Is Bad in React](Why Array Index as Key Is Bad in React)。key 属性是优化列表结点的主要方式，而稳定、唯一、可预测的 key 属性有助于 [Diff 算法](https://blog.doray.me/2016/09/16/short-introduction-to-assumptions-made-in-react-reconciliation/)计算出准确的 DOM 操作，然而数组的索引虽然唯一，但是并不”稳定”，也难以预测。
+  > 为什么? [Why Array Index as Key Is Bad in React](https://blog.doray.me/2016/09/17/why-array-index-as-key-is-bad-in-react/)。key 属性是优化列表结点的主要方式，而稳定、唯一、可预测的 key 属性有助于 [Diff 算法](https://blog.doray.me/2016/09/16/short-introduction-to-assumptions-made-in-react-reconciliation/)计算出准确的 DOM 操作，然而数组的索引虽然唯一，但是并不”稳定”，也难以预测。
 
     ```jsx
      // bad
