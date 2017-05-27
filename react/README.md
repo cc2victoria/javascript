@@ -1,5 +1,5 @@
 # React/JSX 编码规范
-*持续更新中*
+*最近更新时间 2017-5-27 *
 
 <a name="content"></a>
 ## Content 目录
@@ -79,6 +79,9 @@
   - **扩展名**: React模块使用 `.jsx` 扩展名.
   - **文件名**: 文件名使用帕斯卡命名. 如, `ReservationCard.jsx`.
   - **引用命名**: React模块名使用帕斯卡命名，实例使用骆驼式命名. eslint: [`react/jsx-pascal-case`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md)
+  - ** README **: 如果你的模块内容比较多的情况下，建议用一个readme来对模块做简单的说明。
+  
+  
 
     ```jsx
     // bad
@@ -347,7 +350,7 @@
   
   - 对于所有非必须的属性，总是手动去定义`defaultProps`属性.
 
-  > 为什么? propTypes 可以作为模块的文档说明, 并且声明 defaultProps 的话意味着阅读代码的人不需要去假设一些默认值。更重要的是, 显示的声明默认属性可以让你的模块跳过属性类型的检查.
+  > 为什么? propTypes 可以作为模块的文档说明, 并且声明 defaultProps 的话意味着阅读你代码的人不需要去假设一些默认值。而且, propTypes可以让你的模块跳过属性类型的检查.
 
   ```jsx
   // bad
